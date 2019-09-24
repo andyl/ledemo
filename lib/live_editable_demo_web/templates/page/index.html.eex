@@ -1,0 +1,53 @@
+<b>Home</b> | 
+<a href="/html">HTML</a> |
+<a href="/milligram">Milligram</a> |
+<a href="/bootstrap4">Bootstrap4</a>
+
+<hr/>
+
+<a href="https://github.com/andyl/phoenix_live_editable">Phoenix Live Editable</a> 
+is an inline-editing utility for Phoenix Live View inspired by <a href="http://google.com">X Editable</a>.
+
+<p></p>
+
+Editable content with one EEx tag.  In your leex template:
+
+<p></p>
+
+
+<%%= live_edit(assigns, "MyText", id: "textfield", type: "text", on_submit: "save" %>
+
+
+<p></p>
+
+Add a handler:
+
+<p></p>
+
+def handle_event("save", value, socket) do<br/>
+end
+
+<p></p>
+
+Done!
+
+<p></p>
+
+Phoenix Live Editable is a work in progress!!  Here's our current status:
+
+<table>
+
+  <thead>
+    <tr><th>CSS Framework</th><th>text</th><th>select</th><th>radio</th><th>textarea</th><th>calendar</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>HTML</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td>Milligram</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td>Bootstrap4</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td>Bulma</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td>Material</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td>Tailwind</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td>UiKit</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  </tbody>
+
+</table>
