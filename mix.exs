@@ -38,7 +38,10 @@ defmodule LiveEditableDemo.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:floki, ">= 0.0.0", only: :test},
+      {:phoenix_live_view, "~> 0.3.1"},
+      {:phoenix_live_editable, path: "~/src/phoenix_live_editable"}
     ]
   end
 end
