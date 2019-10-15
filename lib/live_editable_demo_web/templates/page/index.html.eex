@@ -1,31 +1,34 @@
+<div style='text-align: center; padding-bottom: 20px;'>
 <b>Home</b> | 
-<a href="/html">HTML</a> |
-<a href="/milligram">Milligram</a> |
-<a href="/bootstrap4">Bootstrap4</a>
+<a href="/milligram">Milligram Demo</a> |
+<a href="/bootstrap4">Bootstrap4 Demo</a>
+</div>
 
-<hr/>
-
-<a href="https://github.com/andyl/phoenix_live_editable">Phoenix Live Editable</a> 
-is an inline-editing utility for Phoenix Live View inspired by <a href="http://google.com">X Editable</a>.
-
-<p></p>
-
-Editable content with one EEx tag.  In your leex template:
+<a href="https://github.com/andyl/phoenix_live_editable" target="_blank">Phoenix Live Editable</a> 
+is an inline-editing utility for 
+<a href="https://github.com/phoenixframework/phoenix_live_view" target="_blank">Phoenix Live View</a> 
+inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Editable</a>.
 
 <p></p>
 
+Create editable data elements with one EEx tag.  
 
+<p></p>
+
+<code>
 <%%= live_edit(assigns, "MyText", id: "textfield", type: "text", on_submit: "save" %>
-
-
-<p></p>
-
-Add a handler:
+</code>
 
 <p></p>
 
-def handle_event("save", value, socket) do<br/>
+Add a handler to your LiveView:
+
+<p></p>
+
+<code>
+def handle_event("save", value, socket) do
 end
+</code>
 
 <p></p>
 
@@ -33,7 +36,7 @@ Done!
 
 <p></p>
 
-Phoenix Live Editable is a work in progress!!  Here's our current status:
+Live Editable is pre-alpha. Pull requests welcome!  Here's the current status:
 
 <table>
 
@@ -41,9 +44,8 @@ Phoenix Live Editable is a work in progress!!  Here's our current status:
     <tr><th>CSS Framework</th><th>text</th><th>select</th><th>radio</th><th>textarea</th><th>calendar</th></tr>
   </thead>
   <tbody>
-    <tr><td>HTML</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-    <tr><td>Milligram</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-    <tr><td>Bootstrap4</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td><a href="/milligram">Milligram</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td><a href="/bootstrap4">Bootstrap4</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Bulma</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Material</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Tailwind</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>

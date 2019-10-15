@@ -1,6 +1,8 @@
 defmodule LiveEditableDemoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :live_editable_demo
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", LiveEditableDemoWeb.UserSocket,
     websocket: true,
     longpoll: false

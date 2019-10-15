@@ -1,4 +1,33 @@
+<div style='text-align: center; padding-bottom: 20px;'>
 <a href="/">Home</a> | 
-<a href="/html">HTML</a> |
-<b>Milligram</b> |
-<a href="/bootstrap4">Bootstrap4</a>
+<b>Milligram Demo</b> |
+<a href="/bootstrap4">Bootstrap4 Demo</a>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        type
+      </th>
+      <th>
+        editable
+      </th>
+      <th>
+        output
+      </th>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      select
+    </td>
+    <td>
+      select field
+    </td>
+    <td>
+      output
+    </td>
+  </tr>
+  </tbody>
+</table>

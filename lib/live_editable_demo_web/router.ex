@@ -7,6 +7,7 @@ defmodule LiveEditableDemoWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Phoenix.LiveView.Flash
   end
 
   pipeline :api do
@@ -17,7 +18,6 @@ defmodule LiveEditableDemoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/html", PageController, :html
     get "/milligram", PageController, :milligram
     get "/bootstrap4", PageController, :bootstrap4
   end

@@ -14,6 +14,10 @@ config :live_editable_demo, LiveEditableDemoWeb.Endpoint,
   render_errors: [view: LiveEditableDemoWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: LiveEditableDemo.PubSub, adapter: Phoenix.PubSub.PG2]
 
+# LiveView Config
+config :live_editable_demo, LiveEditableDemoWeb.Endpoint,
+  live_view: [ signing_salt: "SUPERSECRETKEY" ]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
