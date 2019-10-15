@@ -1,9 +1,9 @@
-defmodule LiveEditableDemo.MixProject do
+defmodule LiveEditable.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :live_editable_demo,
+      app: :live_editable,
       version: "0.1.0",
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -18,7 +18,7 @@ defmodule LiveEditableDemo.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {LiveEditableDemo.Application, []},
+      mod: {LiveEditable.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

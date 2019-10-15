@@ -1,9 +1,9 @@
-defmodule LiveEditableDemoWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :live_editable_demo
+defmodule LiveEditableWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :live_editable
 
   socket "/live", Phoenix.LiveView.Socket
 
-  socket "/socket", LiveEditableDemoWeb.UserSocket,
+  socket "/socket", LiveEditableWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -13,7 +13,7 @@ defmodule LiveEditableDemoWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :live_editable_demo,
+    from: :live_editable,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
@@ -41,8 +41,8 @@ defmodule LiveEditableDemoWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_live_editable_demo_key",
+    key: "_live_editable_key",
     signing_salt: "GqTrmo8O"
 
-  plug LiveEditableDemoWeb.Router
+  plug LiveEditableWeb.Router
 end

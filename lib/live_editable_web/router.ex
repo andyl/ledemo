@@ -1,5 +1,5 @@
-defmodule LiveEditableDemoWeb.Router do
-  use LiveEditableDemoWeb, :router
+defmodule LiveEditableWeb.Router do
+  use LiveEditableWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -14,7 +14,7 @@ defmodule LiveEditableDemoWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", LiveEditableDemoWeb do
+  scope "/", LiveEditableWeb do
     pipe_through :browser
 
     get "/", PageController, :index

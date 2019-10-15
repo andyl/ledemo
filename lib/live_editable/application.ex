@@ -1,4 +1,4 @@
-defmodule LiveEditableDemo.Application do
+defmodule LiveEditable.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications
   @moduledoc false
@@ -9,21 +9,21 @@ defmodule LiveEditableDemo.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      LiveEditableDemoWeb.Endpoint
-      # Starts a worker by calling: LiveEditableDemo.Worker.start_link(arg)
-      # {LiveEditableDemo.Worker, arg},
+      LiveEditableWeb.Endpoint
+      # Starts a worker by calling: LiveEditable.Worker.start_link(arg)
+      # {LiveEditable.Worker, arg},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: LiveEditableDemo.Supervisor]
+    opts = [strategy: :one_for_one, name: LiveEditable.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    LiveEditableDemoWeb.Endpoint.config_change(changed, removed)
+    LiveEditableWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end

@@ -1,5 +1,5 @@
-defmodule LiveEditableDemoWeb.ErrorView do
-  use LiveEditableDemoWeb, :view
+defmodule LiveEditableWeb.ErrorView do
+  use LiveEditableWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

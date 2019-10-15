@@ -1,5 +1,5 @@
-defmodule LiveEditableDemoWeb.PageControllerTest do
-  use LiveEditableDemoWeb.ConnCase
+defmodule LiveEditableWeb.PageControllerTest do
+  use LiveEditableWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, "/")

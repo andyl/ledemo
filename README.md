@@ -1,4 +1,4 @@
-# LiveEditableDemo
+# LiveEditable
 
 To start your Phoenix server:
 

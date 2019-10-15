@@ -1,12 +1,12 @@
-defmodule LiveEditableDemoWeb do
+defmodule LiveEditableWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use LiveEditableDemoWeb, :controller
-      use LiveEditableDemoWeb, :view
+      use LiveEditableWeb, :controller
+      use LiveEditableWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,20 +19,20 @@ defmodule LiveEditableDemoWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: LiveEditableDemoWeb
+      use Phoenix.Controller, namespace: LiveEditableWeb
 
       import Plug.Conn
-      import LiveEditableDemoWeb.Gettext
+      import LiveEditableWeb.Gettext
       import Phoenix.LiveView.Router
-      alias LiveEditableDemoWeb.Router.Helpers, as: Routes
+      alias LiveEditableWeb.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/live_editable_demo_web/templates",
-        namespace: LiveEditableDemoWeb
+        root: "lib/live_editable_web/templates",
+        namespace: LiveEditableWeb
 
       import Phoenix.LiveView, 
         only: [live_render: 2, live_render: 3, live_link: 1, live_link: 2]
@@ -44,9 +44,9 @@ defmodule LiveEditableDemoWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import LiveEditableDemoWeb.ErrorHelpers
-      import LiveEditableDemoWeb.Gettext
-      alias LiveEditableDemoWeb.Router.Helpers, as: Routes
+      import LiveEditableWeb.ErrorHelpers
+      import LiveEditableWeb.Gettext
+      alias LiveEditableWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -62,7 +62,7 @@ defmodule LiveEditableDemoWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import LiveEditableDemoWeb.Gettext
+      import LiveEditableWeb.Gettext
     end
   end
 

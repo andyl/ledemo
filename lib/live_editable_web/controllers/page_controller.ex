@@ -1,8 +1,8 @@
-defmodule LiveEditableDemoWeb.PageController do
-  use LiveEditableDemoWeb, :controller
+defmodule LiveEditableWeb.PageController do
+  use LiveEditableWeb, :controller
 
-  @milligram {LiveEditableDemoWeb.LayoutView, "milligram.html"}
-  @bootstrap {LiveEditableDemoWeb.LayoutView, "bootstrap.html"}
+  @milligram {LiveEditableWeb.LayoutView, "milligram.html"}
+  @bootstrap {LiveEditableWeb.LayoutView, "bootstrap.html"}
 
   def index(conn, _params) do
     render(conn, "index.html", layout: @milligram)

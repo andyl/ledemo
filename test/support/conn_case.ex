@@ -1,4 +1,4 @@
-defmodule LiveEditableDemoWeb.ConnCase do
+defmodule LiveEditableWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -19,10 +19,10 @@ defmodule LiveEditableDemoWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      alias LiveEditableDemoWeb.Router.Helpers, as: Routes
+      alias LiveEditableWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint LiveEditableDemoWeb.Endpoint
+      @endpoint LiveEditableWeb.Endpoint
     end
   end
 
