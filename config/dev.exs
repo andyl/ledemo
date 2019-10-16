@@ -1,11 +1,5 @@
-use Mix.Config
+import Config
 
-# For development, we disable any cache and enable
-# debugging and code reloading.
-#
-# The watchers configuration can be used to run external
-# watchers to your application. For example, we use it
-# with webpack to recompile .js and .css sources.
 config :ledemo, LedemoWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
@@ -20,6 +14,23 @@ config :ledemo, LedemoWeb.Endpoint,
       cd: Path.expand("../assets", __DIR__)
     ]
   ]
+
+
+config :ledemo, LedemoWeb.Endpoint,
+  live_reload: [
+    patterns: [
+      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
+      ~r"priv/gettext/.*(po)$",
+      ~r"lib/ledemo_web/{live,views}/.*(ex)$",
+      ~r"lib/ledemo_web/templates/.*(eex)$"
+    ]
+  ]
+
+config :logger, :console, format: "[$level] $message\n"
+
+config :phoenix, :stacktrace_depth, 20
+
+config :phoenix, :plug_init_mode, :runtime
 
 # ## SSL Support
 #
@@ -44,24 +55,3 @@ config :ledemo, LedemoWeb.Endpoint,
 # If desired, both `http:` and `https:` keys can be
 # configured to run both http and https servers on
 # different ports.
-
-# Watch static and templates for browser reloading.
-config :ledemo, LedemoWeb.Endpoint,
-  live_reload: [
-    patterns: [
-      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"priv/gettext/.*(po)$",
-      ~r"lib/ledemo_web/{live,views}/.*(ex)$",
-      ~r"lib/ledemo_web/templates/.*(eex)$"
-    ]
-  ]
-
-# Do not include metadata nor timestamps in development logs
-config :logger, :console, format: "[$level] $message\n"
-
-# Set a higher stacktrace during development. Avoid configuring such
-# in production as building large stacktraces may be expensive.
-config :phoenix, :stacktrace_depth, 20
-
-# Initialize plugs at runtime for faster development compilation
-config :phoenix, :plug_init_mode, :runtime
