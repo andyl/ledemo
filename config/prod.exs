@@ -6,6 +6,8 @@ config :ledemo, LedemoWeb.Endpoint,
   url: [host: "localhost", port: 5090],
   cache_static_manifest: "priv/static/cache_manifest.json",
   http: [:inet6, port: "5090"],
+  check_origin: false,
+  server: true,
   secret_key_base: key
 
 config :logger, level: :info
@@ -49,7 +51,6 @@ config :logger, level: :info
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start each relevant endpoint:
 #
-#     config :ledemo, LedemoWeb.Endpoint, server: true
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.

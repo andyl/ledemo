@@ -1,10 +1,11 @@
 import Config
 
 config :ledemo, LedemoWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4090],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
+  server: true,
   watchers: [
     node: [
       "node_modules/webpack/bin/webpack.js",
@@ -14,7 +15,6 @@ config :ledemo, LedemoWeb.Endpoint,
       cd: Path.expand("../assets", __DIR__)
     ]
   ]
-
 
 config :ledemo, LedemoWeb.Endpoint,
   live_reload: [
@@ -29,7 +29,6 @@ config :ledemo, LedemoWeb.Endpoint,
 config :logger, :console, format: "[$level] $message\n"
 
 config :phoenix, :stacktrace_depth, 20
-
 config :phoenix, :plug_init_mode, :runtime
 
 # ## SSL Support
