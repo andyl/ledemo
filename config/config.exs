@@ -8,14 +8,14 @@
 use Mix.Config
 
 # Configures the endpoint
-config :live_editable, LiveEditableWeb.Endpoint,
+config :ledemo, LedemoWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "K5kQ1i4z9p1Pcj1R4TtRoeQMIwPraxKYk90re8GjRzSbgrMUZYjjFOv5kFyjBuA2",
-  render_errors: [view: LiveEditableWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LiveEditable.PubSub, adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: LedemoWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Ledemo.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # LiveView Config
-config :live_editable, LiveEditableWeb.Endpoint,
+config :ledemo, LedemoWeb.Endpoint,
   live_view: [ signing_salt: "SUPERSECRETKEY" ]
 
 # Configures Elixir's Logger

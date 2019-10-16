@@ -1,9 +1,9 @@
-defmodule LiveEditable.MixProject do
+defmodule Ledemo.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :live_editable,
+      app: :ledemo,
       version: "0.1.0",
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -18,7 +18,7 @@ defmodule LiveEditable.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {LiveEditable.Application, []},
+      mod: {Ledemo.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

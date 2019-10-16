@@ -1,4 +1,4 @@
-# LiveEditable
+# Ledemo
 
 To start your Phoenix server:
 
