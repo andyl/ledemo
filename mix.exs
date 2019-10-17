@@ -44,7 +44,11 @@ defmodule Ledemo.MixProject do
       {:floki, ">= 0.0.0", only: :test},
       {:version_tasks, "~> 0.11.3"},
       {:phoenix_live_view, "~> 0.3.1"},
-      {:phoenix_live_editable, path: "~/src/phoenix_live_editable"}
+      {
+        :phoenix_live_editable, 
+        # github: "andyl/phoenix_live_editable"
+        path: "~/src/phoenix_live_editable"
+      }
     ]
   end
 end
