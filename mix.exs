@@ -1,10 +1,12 @@
 defmodule Ledemo.MixProject do
   use Mix.Project
 
+  @version "0.0.2"
+
   def project do
     [
       app: :ledemo,
-      version: "0.0.1",
+      version: @version,
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
@@ -40,6 +42,7 @@ defmodule Ledemo.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:floki, ">= 0.0.0", only: :test},
+      {:version_tasks, "~> 0.11.3"},
       {:phoenix_live_view, "~> 0.3.1"},
       {:phoenix_live_editable, path: "~/src/phoenix_live_editable"}
     ]
