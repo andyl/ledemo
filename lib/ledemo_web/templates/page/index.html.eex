@@ -9,36 +9,44 @@ is an inline-editing utility for
 <a href="https://github.com/phoenixframework/phoenix_live_view" target="_blank">Phoenix Live View</a> 
 inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Editable</a>.
 
-<p></p>
-
-Create editable data elements with one EEx tag.  
-
-<p></p>
-
-<code>
-<%%= live_edit(assigns, "MyText", id: "textfield", type: "text", on_submit: "save" %>
-</code>
-
-<p></p>
-
-Add a handler to your LiveView:
-
-<p></p>
-
-<code>
-def handle_event("save", value, socket) do
-end
-</code>
-
-<p></p>
-
-Done!
-
-<p></p>
+<table style='border-top: 1px solid lightgray; margin-top: 10px;'>
+  <tr>
+    <td>
+      Add an EEX tag
+    </td>
+    <td colspan=2>
+      <code>
+      <%%= live_edit(assigns, "MyText", id: "textfield", type: "text", on_submit: "save" %>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Add a LiveView Handler
+    </td>
+    <td colspan=2>
+      <code>
+      def handle_event("save", value, socket) do
+      end
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Done!
+    </td>
+    <td>
+      EDIT THIS FIELD
+    </td>
+    <td>
+      RESULT: EDIT THIS FIELD
+    </td>
+  </tr>
+</table>
 
 Live Editable is pre-alpha. Pull requests welcome!  Here's the current status:
 
-<table>
+<table style='border-top: 1px solid lightgray; margin-top: 20px;'>
 
   <thead>
     <tr><th>CSS Framework</th><th>text</th><th>select</th><th>radio</th><th>textarea</th><th>calendar</th></tr>

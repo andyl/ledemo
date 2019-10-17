@@ -5,7 +5,7 @@ key = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasfdasdfasdfasdfasfasfdasdf"
 config :ledemo, LedemoWeb.Endpoint,
   url: [host: "localhost", port: 5090],
   cache_static_manifest: "priv/static/cache_manifest.json",
-  http: [:inet6, port: "5090"],
+  http: [:inet6, port: 5090],
   check_origin: false,
   secret_key_base: key,
   server: true,
