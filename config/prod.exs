@@ -7,7 +7,7 @@ config :ledemo, LedemoWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json",
   http: [:inet6, port: "5090"],
   check_origin: false,
-  secret_key_base: key
+  secret_key_base: key,
   server: true,
   root: "."
 
