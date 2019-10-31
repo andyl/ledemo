@@ -47,7 +47,7 @@ defmodule Ledemo.MixProject do
       {
         :phoenix_live_editable, 
         # github: "andyl/phoenix_live_editable"
-        path: "~/src/phoenix_live_editable"
+        path: "~/lib/phoenix_live_editable"
       }
     ]
   end
