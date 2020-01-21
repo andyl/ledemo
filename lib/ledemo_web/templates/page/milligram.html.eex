@@ -1,7 +1,8 @@
 <div style='text-align: center; padding-bottom: 20px;'>
 <a href="/">Home</a> | 
-<b>Milligram Demo</b> |
-<a href="/bootstrap4">Bootstrap4 Demo</a>
+<a href="/bootstrap4">Bootstrap4</a> | 
+<a href="/diy">DIY</a> | 
+<b>Milligram</b> 
 </div>
 
 <table>

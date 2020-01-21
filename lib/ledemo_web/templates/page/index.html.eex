@@ -1,11 +1,12 @@
 <div style='text-align: center; padding-bottom: 20px;'>
 <b>Home</b> | 
-<a href="/milligram">Milligram Demo</a> |
-<a href="/bootstrap4">Bootstrap4 Demo</a>
+<a href="/bootstrap4">Bootstrap4</a> | 
+<a href="/DIY">DIY</a> |
+<a href="/milligram">Milligram</a> 
 </div>
 
 <a href="https://github.com/andyl/phoenix_live_editable" target="_blank">Phoenix Live Editable</a> 
-is an inline-editing utility for 
+is a simple inline-editing utility for 
 <a href="https://github.com/phoenixframework/phoenix_live_view" target="_blank">Phoenix Live View</a> 
 inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Editable</a>.
 
@@ -14,7 +15,7 @@ inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Ed
     <td>
       Add an EEX tag
     </td>
-    <td colspan=2>
+    <td>
       <code>
       <%%= live_edit(assigns, "MyText", id: "textfield", type: "text", on_submit: "save" %>
       </code>
@@ -24,25 +25,18 @@ inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Ed
     <td>
       Add a LiveView Handler
     </td>
-    <td colspan=2>
+    <td>
       <code>
-      def handle_event("save", value, socket) do
-      end
+        def handle_event("save", value, socket) do
+        end
       </code>
     </td>
   </tr>
-  <tr>
-    <td>
-      Done!
-    </td>
-    <td>
-      EDIT THIS FIELD
-    </td>
-    <td>
-      RESULT: EDIT THIS FIELD
-    </td>
-  </tr>
 </table>
+
+<div style='text-align: center; border: 1px solid black; background: lightgray; padding: 10px; margin: 20px;'>
+  <%= live_render @conn, LedemoWeb.Live.HomeDemo %>
+</div>
 
 Live Editable is pre-alpha. Pull requests welcome!  Here's the current status:
 
@@ -52,8 +46,9 @@ Live Editable is pre-alpha. Pull requests welcome!  Here's the current status:
     <tr><th>CSS Framework</th><th>text</th><th>select</th><th>radio</th><th>textarea</th><th>calendar</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/milligram">Milligram</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td><a href="/bootstrap4">Bootstrap4</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td><a href="/diy">DIY</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
+    <tr><td><a href="/milligram">Milligram</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Bulma</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Material</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Tailwind</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>

@@ -18,7 +18,8 @@ defmodule LedemoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/milligram", PageController, :milligram
+    get "/diy", PageController, :diy
     get "/bootstrap4", PageController, :bootstrap4
+    get "/milligram", PageController, :milligram
   end
 end

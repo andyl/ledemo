@@ -1,7 +1,8 @@
 <div style='text-align: center; padding-bottom: 20px;'>
 <a href="/">Home</a> | 
-<a href="/milligram">Milligram Demo</a> |
-<b>Bootstrap4 Demo</b>
+<b>Bootstrap4</b> |
+<a href="/diy">DIY</a> |
+<a href="/milligram">Milligram</a>
 </div>
 
 <table class='table table-sm'>
