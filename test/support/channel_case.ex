@@ -1,4 +1,4 @@
-defmodule LedemoWeb.ChannelCase do
+defmodule PleDemoWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,7 +21,7 @@ defmodule LedemoWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint LedemoWeb.Endpoint
+      @endpoint PleDemoWeb.Endpoint
     end
   end
 

@@ -1,6 +1,6 @@
 import Config
 
-config :ledemo, LedemoWeb.Endpoint,
+config :ple_demo, ple_demoWeb.Endpoint,
   http: [port: 4090],
   debug_errors: true,
   code_reloader: true,
@@ -16,13 +16,13 @@ config :ledemo, LedemoWeb.Endpoint,
     ]
   ]
 
-config :ledemo, LedemoWeb.Endpoint,
+config :ple_demo, ple_demoWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/ledemo_web/{live,views}/.*(ex)$",
-      ~r"lib/ledemo_web/templates/.*(eex)$"
+      ~r"lib/ple_demo_web/{live,views}/.*(ex)$",
+      ~r"lib/ple_demo_web/templates/.*(eex)$"
     ]
   ]
 

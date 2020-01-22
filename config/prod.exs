@@ -2,7 +2,7 @@ import Config
 
 key = "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasfdasdfasdfasdfasfasfdasdf"
 
-config :ledemo, LedemoWeb.Endpoint,
+config :ple_demo, ple_demoWeb.Endpoint,
   url: [host: "localhost", port: 5090],
   cache_static_manifest: "priv/static/cache_manifest.json",
   http: [:inet6, port: 5090],
@@ -18,7 +18,7 @@ config :logger, level: :info
 # To get SSL working, you will need to add the `https` key
 # to the previous section and set your `:url` port to 443:
 #
-#     config :ledemo, LedemoWeb.Endpoint,
+#     config :ple_demo, ple_demoWeb.Endpoint,
 #       ...
 #       url: [host: "example.com", port: 443],
 #       https: [
@@ -42,7 +42,7 @@ config :logger, level: :info
 # We also recommend setting `force_ssl` in your endpoint, ensuring
 # no data is ever sent via http, always redirecting to https:
 #
-#     config :ledemo, LedemoWeb.Endpoint,
+#     config :ple_demo, ple_demoWeb.Endpoint,
 #       force_ssl: [hsts: true]
 #
 # Check `Plug.SSL` for all available options in `force_ssl`.

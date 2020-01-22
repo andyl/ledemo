@@ -1,0 +1,37 @@
+<div style='text-align: center; padding-bottom: 20px;'>
+<a href="/">Home</a> | 
+<b>Bootstrap4</b> |
+<a href="/milligram">Milligram</a>
+</div>
+
+<div style='text-align: center; border: 1px solid black; background: lightgray; padding: 10px; margin: 20px;'>
+  <%= live_render @conn, PleDemoWeb.Live.HomeDemo %>
+</div>
+
+<table class='table table-sm'>
+  <thead>
+    <tr>
+      <th>
+        type
+      </th>
+      <th>
+        editable
+      </th>
+      <th>
+        output
+      </th>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      select
+    </td>
+    <td>
+      select field
+    </td>
+    <td>
+      output
+    </td>
+  </tr>
+  </tbody>
+</table>

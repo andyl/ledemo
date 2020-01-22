@@ -1,6 +1,6 @@
 import Config
 
-config :ledemo, LedemoWeb.Endpoint,
+config :ple_demo, ple_demoWeb.Endpoint,
   http: [port: 4002],
   server: false
 

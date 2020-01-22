@@ -1,11 +1,11 @@
-defmodule Ledemo.MixProject do
+defmodule PleDemo.MixProject do
   use Mix.Project
 
   @version "0.0.2"
 
   def project do
     [
-      app: :ledemo,
+      app: :ple_demo,
       version: @version,
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -20,7 +20,7 @@ defmodule Ledemo.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Ledemo.Application, []},
+      mod: {PleDemo.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

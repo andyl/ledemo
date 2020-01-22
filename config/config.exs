@@ -2,13 +2,13 @@ import Config
 
 key = "K5kQ1i4z9p1Pcj1R4TtRoeQMIwPraxKYk90re8GjRzSbgrMUZYjjFOv5kFyjBuA2"
 
-config :ledemo, LedemoWeb.Endpoint,
+config :ple_demo, ple_demoWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: key,
-  render_errors: [view: LedemoWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Ledemo.PubSub, adapter: Phoenix.PubSub.PG2]
+  render_errors: [view: PleDemoWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: PleDemo.PubSub, adapter: Phoenix.PubSub.PG2]
 
-config :ledemo, LedemoWeb.Endpoint,
+config :ple_demo, ple_demoWeb.Endpoint,
   live_view: [ signing_salt: "SUPERSECRETKEY" ]
 
 config :logger, :console,
