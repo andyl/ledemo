@@ -2,6 +2,12 @@
 <a href="/">Home</a> | 
 <b>Bootstrap4</b> |
 <a href="/milligram">Milligram</a>
+
+<p>
+<br/>
+<i class="material-icons">face</i>
+</p>
+
 </div>
 
 <div style='text-align: center; border: 1px solid black; background: lightgray; padding: 10px; margin: 20px;'>
