@@ -1,9 +1,9 @@
 defmodule LedemoWeb.PageController do
   use LedemoWeb, :controller
 
-  @diy       {LedemoWeb.LayoutView, "diy.html"}
-  @milligram {LedemoWeb.LayoutView, "milligram.html"}
-  @bootstrap {LedemoWeb.LayoutView, "bootstrap.html"}
+  @diy        {LedemoWeb.LayoutView, "diy.html"}
+  @milligram  {LedemoWeb.LayoutView, "milligram.html"}
+  @bootstrap4 {LedemoWeb.LayoutView, "bootstrap4.html"}
 
   def index(conn, _params) do
     render(conn, "index.html", layout: @milligram)
@@ -18,6 +18,6 @@ defmodule LedemoWeb.PageController do
   end
 
   def bootstrap4(conn, _params) do
-    render(conn, "bootstrap.html", layout: @bootstrap)
+    render(conn, "bootstrap4.html", layout: @bootstrap4)
   end
 end

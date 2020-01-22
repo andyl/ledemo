@@ -1,14 +1,12 @@
 <div style='text-align: center; padding-bottom: 20px;'>
 <b>Home</b> | 
 <a href="/bootstrap4">Bootstrap4</a> | 
-<a href="/DIY">DIY</a> |
 <a href="/milligram">Milligram</a> 
 </div>
 
 <a href="https://github.com/andyl/phoenix_live_editable" target="_blank">Phoenix Live Editable</a> 
-is a simple inline-editing utility for 
-<a href="https://github.com/phoenixframework/phoenix_live_view" target="_blank">Phoenix Live View</a> 
-inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Editable</a>.
+is inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Editable</a>,
+fast to confiugure and use in your Live View app:
 
 <table style='border-top: 1px solid lightgray; margin-top: 10px;'>
   <tr>
@@ -34,10 +32,6 @@ inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Ed
   </tr>
 </table>
 
-<div style='text-align: center; border: 1px solid black; background: lightgray; padding: 10px; margin: 20px;'>
-  <%= live_render @conn, LedemoWeb.Live.HomeDemo %>
-</div>
-
 Live Editable is pre-alpha. Pull requests welcome!  Here's the current status:
 
 <table style='border-top: 1px solid lightgray; margin-top: 20px;'>
@@ -47,7 +41,6 @@ Live Editable is pre-alpha. Pull requests welcome!  Here's the current status:
   </thead>
   <tbody>
     <tr><td><a href="/bootstrap4">Bootstrap4</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
-    <tr><td><a href="/diy">DIY</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td><a href="/milligram">Milligram</a></td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Bulma</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>
     <tr><td>Material</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td></tr>

@@ -66,7 +66,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -110,9 +110,9 @@ eval("!function (e, t) {\n   true ? module.exports = t() : undefined;\n}(this, f
   !*** ./css/app.css ***!
   \*********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open '/home/aleak/src/ledemo/assets/css/live_editable.css'\\n    at /home/aleak/src/ledemo/assets/node_modules/webpack/lib/NormalModule.js:244:20\\n    at /home/aleak/src/ledemo/assets/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at Array.<anonymous> (/home/aleak/src/ledemo/assets/node_modules/loader-runner/lib/LoaderRunner.js:203:19)\\n    at Storage.finished (/home/aleak/src/ledemo/assets/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:43:16)\\n    at ReadFileContext.<anonymous> (/home/aleak/src/ledemo/assets/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:79:9)\\n    at ReadFileContext.callback (/home/aleak/src/ledemo/assets/node_modules/graceful-fs/graceful-fs.js:115:16)\\n    at FSReqCallback.readFileAfterOpen [as oncomplete] (fs.js:239:13)\");\n\n//# sourceURL=webpack:///./css/app.css?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./css/app.css?");
 
 /***/ }),
 
@@ -125,17 +125,6 @@ eval("throw new Error(\"Module build failed: ModuleBuildError: Module build fail
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/app.css */ \"./css/app.css\");\n/* harmony import */ var _css_app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_app_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var phoenix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phoenix */ \"../deps/phoenix/priv/static/phoenix.js\");\n/* harmony import */ var phoenix__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phoenix__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var phoenix_live_view__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! phoenix_live_view */ \"../deps/phoenix_live_view/priv/static/phoenix_live_view.js\");\n/* harmony import */ var phoenix_live_view__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(phoenix_live_view__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var phoenix_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! phoenix_html */ \"../deps/phoenix_html/priv/static/phoenix_html.js\");\n/* harmony import */ var phoenix_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(phoenix_html__WEBPACK_IMPORTED_MODULE_3__);\n// We need to import the CSS so that webpack will load it.\n// The MiniCssExtractPlugin is used to separate it out into\n// its own CSS file.\n // webpack automatically bundles all modules in your\n// entry points. Those entry points can be configured\n// in \"webpack.config.js\".\n//\n// Import dependencies\n//\n\n\n\nvar csrfToken = document.querySelector(\"meta[name='csrf-token']\").getAttribute(\"content\");\nvar liveSocket = new phoenix_live_view__WEBPACK_IMPORTED_MODULE_2___default.a(\"/live\", phoenix__WEBPACK_IMPORTED_MODULE_1__[\"Socket\"], {\n  params: {\n    _csrf_token: csrfToken\n  }\n});\nliveSocket.connect();\n // Import local files\n//\n// Local files can be imported directly using relative paths, for example:\n// import socket from \"./socket\"\n\n//# sourceURL=webpack:///./js/app.js?");
-
-/***/ }),
-
-/***/ 0:
-/*!*************************!*\
-  !*** multi ./js/app.js ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__(/*! ./js/app.js */\"./js/app.js\");\n\n\n//# sourceURL=webpack:///multi_./js/app.js?");
 
 /***/ })
 
