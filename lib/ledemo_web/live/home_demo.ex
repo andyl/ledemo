@@ -30,6 +30,6 @@ defmodule LedemoWeb.Live.HomeDemo do
     IO.inspect tag
     IO.inspect value
     IO.inspect socket
-    {:ok, socket}
+    {:noreply, socket}
   end
 end
