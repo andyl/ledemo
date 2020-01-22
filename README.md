@@ -1,6 +1,6 @@
-# LeDemo
+# PleDemo
 
-LeDemo is a Phoenix application showing examples for [PhoenixLiveEditable][1]
+PleDemo is a Phoenix application showing examples for [PhoenixLiveEditable][1]
 
 [1]: http://github.com/andyl/phoenix_live_editable
 
