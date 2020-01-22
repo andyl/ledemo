@@ -1,6 +1,6 @@
 import Config
 
-config :ple_demo, ple_demoWeb.Endpoint,
+config :ple_demo, PleDemoWeb.Endpoint,
   http: [port: 4090],
   debug_errors: true,
   code_reloader: true,
@@ -16,7 +16,7 @@ config :ple_demo, ple_demoWeb.Endpoint,
     ]
   ]
 
-config :ple_demo, ple_demoWeb.Endpoint,
+config :ple_demo, PleDemoWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
