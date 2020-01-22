@@ -20,6 +20,9 @@ module.exports = (_env, _options) => ({
     filename: '[name].js',
     path: path.resolve(__dirname, '../priv/static/js')
   },
+  resolve: {
+    modules: ['node_modules', '../../../../lib', '/home/aleak/lib']
+  },
   module: {
     rules: [
       {
@@ -31,7 +34,19 @@ module.exports = (_env, _options) => ({
       },
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          MiniCssExtractPlugin.loader, 
+          'css-loader', 
+          // 'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: ['.', '../../../../lib'],
+              }
+            }
+          }
+        ]
       }
     ]
   },
