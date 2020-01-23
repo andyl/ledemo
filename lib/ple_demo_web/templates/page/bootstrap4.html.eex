@@ -2,11 +2,19 @@
 <a href="/">Home</a> | 
 <b>Bootstrap4</b> |
 <a href="/milligram">Milligram</a>
+</div>
 
-<p>
-<br/>
-<i class="material-icons">face</i>
-</p>
+<div style='border: 1px solid black; text-align: center;'>
+  <p>
+  HELLO WORLD
+  </p>
+
+  <style> .svg-inline { color: blue; height: 36px; } </style>
+
+  <p><%= Phoenix.LiveEditable.Svg.inline("BootstrapOk") %></p>
+  <p><%= Phoenix.LiveEditable.Svg.inline("BootstrapCancel") %></p>
+  <p><%= Phoenix.LiveEditable.Svg.inline("MilligramOk") %></p>
+  <p><%= Phoenix.LiveEditable.Svg.inline("MilligramCancel") %></p>
 
 </div>
 
