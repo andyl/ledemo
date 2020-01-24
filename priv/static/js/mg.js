@@ -66,31 +66,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js/milligram.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js/mg.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./css/milligram.scss":
-/*!****************************!*\
-  !*** ./css/milligram.scss ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./css/milligram.scss?");
-
-/***/ }),
-
-/***/ "./js/milligram.js":
-/*!*************************!*\
-  !*** ./js/milligram.js ***!
-  \*************************/
+/***/ "./js/mg.js":
+/*!******************!*\
+  !*** ./js/mg.js ***!
+  \******************/
 /*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_milligram_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/milligram.scss */ \"./css/milligram.scss\");\n/* harmony import */ var _css_milligram_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_milligram_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(\"HELLO MILLIGRAM\");\n\n//# sourceURL=webpack:///./js/milligram.js?");
+eval("throw new Error(\"Module build failed: Error: ENOENT: no such file or directory, open '/home/aleak/src/ple_demo/assets/js/mg.js'\");\n\n//# sourceURL=webpack:///./js/mg.js?");
 
 /***/ })
 

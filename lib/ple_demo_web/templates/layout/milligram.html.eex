@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/milligram.css") %>"/>
   </head>
   <body>
-    <header style='valign: top; text-align: center;'>
-      <img height=30 src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"/>
-      <b>Phoenix Live Editable</b> - simple inline editing for Phoenix Live View
+    <header style='display: flex; justify-content: center;'>
+      <div>
+        <img height=30 src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"/>
+      </div>
+      <div style='padding-left: 10px;'>
+        <b>Phoenix Live Editable</b> - simple inline editing for Phoenix Live View
+      </div>
     </header>
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

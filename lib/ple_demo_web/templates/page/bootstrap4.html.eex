@@ -4,22 +4,12 @@
 <a href="/milligram">Milligram</a>
 </div>
 
-<div style='border: 1px solid black; text-align: center;'>
-  <p>
-  HELLO WORLD
-  </p>
-
-  <style> .svg-inline { color: blue; height: 36px; } </style>
-
-  <p><%= Phoenix.LiveEditable.Svg.inline("BootstrapOk") %></p>
-  <p><%= Phoenix.LiveEditable.Svg.inline("BootstrapCancel") %></p>
-  <p><%= Phoenix.LiveEditable.Svg.inline("MilligramOk") %></p>
-  <p><%= Phoenix.LiveEditable.Svg.inline("MilligramCancel") %></p>
-
-</div>
-
 <div style='text-align: center; border: 1px solid black; background: lightgray; padding: 10px; margin: 20px;'>
   <%= live_render @conn, PleDemoWeb.Live.HomeDemo %>
+</div>
+
+<div class="bing" style='text-align: center; border: 5px solid black;'>
+  text here
 </div>
 
 <table class='table table-sm'>

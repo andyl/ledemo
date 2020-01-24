@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= csrf_meta_tag() %>
-    <title>Live Editable Demo</title>
+    <title>Phoenix Live Editable</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/bootstrap4.css") %>"/>
   </head>
   <body>
-    <header style='padding-top: 10px; valign: top; text-align: center;'>
-      <img height=30 src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"/>
-      <b>Phoenix Live Editable</b> - simple inline editing for Phoenix Live View
-      <hr/>
+    <header style='padding: 10px; display: flex; justify-content: center;'>
+      <div>
+        <img height=30 src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"/>
+      </div>
+      <div style='padding-left: 10px;'>
+        <b>Phoenix Live Editable</b> - simple inline editing for Phoenix Live View
+      </div>
     </header>
     <main role="main" class="container">
       <%= render @view_module, @view_template, assigns %>
