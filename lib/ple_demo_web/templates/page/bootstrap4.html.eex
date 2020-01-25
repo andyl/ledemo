@@ -1,41 +1,12 @@
-<div style='text-align: center; padding-bottom: 20px;'>
-<a href="/">Home</a> | 
-<b>Bootstrap4</b> |
-<a href="/milligram">Milligram</a>
+<div style='text-align: center;'>
+  <a href="/">Home</a> | 
+  <b>Bootstrap4</b> |
+  <a href="/milligram">Milligram</a>
+  <p style='margin-top: 1em;'>
+  <a href="https://getbootstrap.com">Bootstrap</a> is a popular CSS framework with large community support.
+  </p>
 </div>
 
-<div style='text-align: center; border: 1px solid black; background: lightgray; padding: 10px; margin: 20px;'>
-  <%= live_render @conn, PleDemoWeb.Live.HomeDemo %>
+<div>
+  <%= live_render @conn, PleDemoWeb.Live.Bootstrap4Demo %>
 </div>
-
-<div class="bing" style='text-align: center; border: 5px solid black;'>
-  text here
-</div>
-
-<table class='table table-sm'>
-  <thead>
-    <tr>
-      <th>
-        type
-      </th>
-      <th>
-        editable
-      </th>
-      <th>
-        output
-      </th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      select
-    </td>
-    <td>
-      select field
-    </td>
-    <td>
-      output
-    </td>
-  </tr>
-  </tbody>
-</table>

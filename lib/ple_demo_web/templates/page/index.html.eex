@@ -10,7 +10,7 @@ Simple inline editing for your LiveView app.
 <table style='border-top: 1px solid lightgray; margin-top: 10px;'>
   <tr>
     <td>
-      Add an EEX tag
+      Add a LEEX tag to your LiveView
     </td>
     <td>
       <code>

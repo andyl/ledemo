@@ -4,8 +4,8 @@ defmodule PleDemoWeb.PageView do
 
   alias Phoenix.LiveEditable.Svg
 
-  def bo(),  do: Svg.inline_tag("BootstrapOk")
-  def bc(),  do: Svg.inline_tag("BootstrapCancel")
-  def mo(),  do: Svg.inline_tag("MilligramOk")
-  def mc(),  do: Svg.inline_tag("MilligramCancel")
+  def bo(),  do: Svg.inline_tag("SquareOk")
+  def bc(),  do: Svg.inline_tag("SquareCancel")
+  def mo(),  do: Svg.inline_tag("CircleOk")
+  def mc(),  do: Svg.inline_tag("CircleCancel")
 end

@@ -1,0 +1,30 @@
+// shared styles
+
+.ple_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 20px;
+}
+
+.header_cell {
+  border-bottom: 2px solid black;
+}
+
+.ple_wrapper > div {
+  padding: 0.5em;
+}
+
+.form-control {
+  font-size: 1em;
+}
+
+$hl_color: #FFE;
+
+.ple_wrapper > div:nth-child(4n) {
+  background: $hl_color;
+}
+
+.ple_wrapper > div:nth-child(4n-1) {
+  background: $hl_color;
+}
+
