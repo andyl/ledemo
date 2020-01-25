@@ -1,33 +1,7 @@
-<div style='text-align: center; padding-bottom: 20px;'>
-<a href="/">Home</a> | 
-<a href="/bootstrap4">Bootstrap4</a> | 
-<b>Milligram</b> 
+<div style='text-align: center; padding-bottom: 1em;'>
+  <a href="https://milligram.io">Milligram</a> is a lightweight CSS framework that is the default for new Phoenix apps.
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>
-        type
-      </th>
-      <th>
-        editable
-      </th>
-      <th>
-        output
-      </th>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      select
-    </td>
-    <td>
-      select field
-    </td>
-    <td>
-      output
-    </td>
-  </tr>
-  </tbody>
-</table>
+<div>
+  <%= live_render @conn, PleDemoWeb.Live.MilligramDemo %>
+</div>

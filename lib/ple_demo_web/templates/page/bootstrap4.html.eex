@@ -1,9 +1,6 @@
 <div style='text-align: center;'>
-  <a href="/">Home</a> | 
-  <b>Bootstrap4</b> |
-  <a href="/milligram">Milligram</a>
   <p style='margin-top: 1em;'>
-  <a href="https://getbootstrap.com">Bootstrap</a> is a popular CSS framework with large community support.
+    <a href="https://getbootstrap.com">Bootstrap</a> is a popular CSS framework with large community support.
   </p>
 </div>
 

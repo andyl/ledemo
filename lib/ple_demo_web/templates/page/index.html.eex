@@ -3,9 +3,10 @@
 .svg-cancel { color: gray; height: 1.5em; top:.2em; position: relative;}
 td { min-width: 75px; }
 </style>
-<a href="https://github.com/andyl/phoenix_live_editable" target="_blank">Phoenix Live Editable</a> 
-is inspired by <a href="http://vitalets.github.io/x-editable/" target="_blank">X Editable</a>.
-Simple inline editing for your LiveView app.
+<div style='text-align: center;'>
+  <a href="https://github.com/andyl/phoenix_live_editable" target="_blank">Phoenix Live Editable</a> 
+  is simple inline editing for your LiveView app.
+</div>
 
 <table style='border-top: 1px solid lightgray; margin-top: 10px;'>
   <tr>
@@ -32,14 +33,16 @@ Simple inline editing for your LiveView app.
   <tr>
     <td>Try the demo!</td>
     <td>
-      <a href="/bootstrap4">Bootstrap4</a> | 
-      <a href="/milligram">Milligram</a> 
+      <a href="/milligram">Milligram</a> |
+      <a href="/bootstrap4">Bootstrap4</a>
     </td>
   </tr>
 </table>
 
+<div style='text-align: center;'>
 <a href="https://github.com/andyl/phoenix_live_editable" target="_blank">Phoenix Live Editable</a> 
-is pre-alpha. Pull requests welcome!  Here's the current status:
+is pre-alpha. Here's the current status:
+</div>
 
 <table style='border-top: 1px solid lightgray; margin-top: 20px;'>
 
@@ -47,8 +50,8 @@ is pre-alpha. Pull requests welcome!  Here's the current status:
     <tr><th>CSS Framework</th><th>text</th><th>select</th><th>radio</th><th>textarea</th><th>calendar</th></tr>
   </thead>
   <tbody>
+    <tr><td><a href="/milligram">Milligram</a></td><td><%=mo()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td></tr>
     <tr><td><a href="/bootstrap4">Bootstrap4</a></td><td><%= mo() %></td><td><%= mc() %></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td></tr>
-    <tr><td><a href="/milligram">Milligram</a></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td></tr>
     <tr><td>Bulma</td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td></tr>
     <tr><td>Material</td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td></tr>
     <tr><td>Tailwind</td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td><td><%=mc()%></td></tr>

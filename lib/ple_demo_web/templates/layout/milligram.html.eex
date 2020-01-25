@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= csrf_meta_tag() %>
     <title>Live Editable Demo</title>
-    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/milligram.css") %>"/>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
-    <header style='display: flex; justify-content: center;'>
+    <header style='display: flex; justify-content: space-evenly;'>
       <div>
-        <img height=30 src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"/>
+        <img height=15 src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>"/>
+        <b>Phoenix Live Editable</b>
       </div>
-      <div style='padding-left: 10px;'>
-        <b>Phoenix Live Editable</b> - simple inline editing for Phoenix Live View
+      <div>
+        <%= header_nav(@conn) %>
       </div>
     </header>
     <main role="main" class="container">

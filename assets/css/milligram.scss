@@ -1,6 +1,7 @@
-.ping {
-  background: lightgreen;
-}
-
-@import "./shared.scss";
+@import "./milligram_lib.css";
 @import "../../../../lib/phoenix_live_editable/priv/static/css/milligram.css";
+@import "./shared.scss";
+
+.ple-mg-text {
+  width: 50px;
+}
